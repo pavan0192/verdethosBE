@@ -1,15 +1,7 @@
 # Verdethos Backend API
 
-Minimal Backend API for Producer Management Module - Built for Senior Fullstack Lead Assignment
-
-## 🏗️ Architecture
-
-This backend demonstrates **lead-level** architectural principles:
-
-- **Clean Architecture**: Modular folder structure with separation of concerns
-- **Multi-Tenant Isolation**: Tenant-based data isolation via middleware
-- **Type Safety**: Strict TypeScript with interfaces (no classes for data models)
-- **In-Memory Storage**: Minimal backend using arrays (no database)
+Minimal Backend API for Producer Management Module
+No Database
 
 ## 📁 Project Structure
 
