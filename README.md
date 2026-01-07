@@ -212,10 +212,8 @@ Headers: (None required)
 
 You can create a Postman collection with:
 - **Environment variable**: `base_url` = `http://localhost:3001`
-- **Environment variable**: `tenant_id` = `tenant-001`
+- **Environment variable**: `tenant_id` = `tenant-001` or `tenant-002`
 - Then use: `{{base_url}}/api/producers` and `{{tenant_id}}` in headers
-
-## 🔐 Security Features
 
 ### Tenant Isolation
 - All requests must include `x-tenant-id` header
@@ -265,29 +263,3 @@ npm run type-check
 5. **Strict Typing**: Full TypeScript strict mode for type safety
 6. **Error Handling**: Consistent error responses with appropriate HTTP status codes
 
-## 🔄 Integration with Frontend
-
-The Angular frontend (`verdethosUI`) can integrate with this backend by:
-
-1. Setting up HTTP interceptors to add required headers:
-   ```typescript
-   headers: {
-     'x-tenant-id': 'tenant-001'
-   }
-   ```
-
-2. Updating `ProducerService` to call real API endpoints instead of mock data
-
-3. Handling pagination through query parameters
-
-## 📚 Next Steps (For Production)
-
-- [ ] Add database integration (PostgreSQL/MongoDB)
-- [ ] Implement JWT authentication
-- [ ] Add request validation (e.g., using `joi` or `zod`)
-- [ ] Add logging (e.g., Winston)
-- [ ] Add unit and integration tests
-- [ ] Add API documentation (Swagger/OpenAPI)
-- [ ] Implement rate limiting
-- [ ] Add request/response compression
-- [ ] Add monitoring and health checks
