@@ -40,12 +40,5 @@ app.use(errorHandler);
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📋 Health check: http://localhost:${PORT}/health`);
-  console.log(`🔌 API endpoint: http://localhost:${PORT}/api/producers`);
-  console.log(`\n📝 Required Headers:`);
-  console.log(`   - x-tenant-id: Tenant identifier`);
-  console.log(`\n💡 Postman Testing:`);
-  console.log(`   Base URL: http://localhost:${PORT}`);
-  console.log(`   Header: x-tenant-id: tenant-001`);
 });
 
